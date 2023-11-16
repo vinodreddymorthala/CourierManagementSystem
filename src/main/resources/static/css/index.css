@@ -1,0 +1,145 @@
+@charset "ISO-8859-1";
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    
+}
+.tail{
+   margin-top: 190px;
+}
+.row {
+    display: flex;
+    flex-wrap: wrap;
+}
+.col {
+    width: 25%;
+    padding: 0 15px;
+}
+.col h3{
+    font-size: 20px;
+    text-transform: capitalize;
+    position: relative;
+    color: #ff66b3;
+    
+}
+.col h3::before{
+    content: '';
+    position: absolute;
+    left: 0;
+    bottom: -4px;
+    background-color: black;
+    height: 2px;
+    width: 50px;
+}
+.col ul li{
+    margin-top: 10px;
+    
+}
+
+.col ul li a{
+    font-size: 13px;
+    display: block;
+    transition: all 0.3s ease;
+}
+.col ul li a:hover{
+  color: blue;
+  padding-left: 10px;
+  cursor: pointer;
+}
+
+.col .inst{
+    font-size: 13px;
+    display: block;
+    transition: all 0.3s ease;
+}
+.col .inst:hover{
+  color: #ff471a;
+  padding-left: 10px;
+  cursor: pointer;
+}
+
+.col .twit{
+    font-size: 13px;
+    display: block;
+    transition: all 0.3s ease;
+}
+.col .twit:hover{
+  color: #9999ff;
+  padding-left: 10px;
+  cursor: pointer;
+}
+
+.comment{
+    width: 290px;
+    background-color: #cc99ff;
+    color: white;
+    margin-left: -40px;
+    border-radius: 9px;
+}
+.comment h4{
+    margin: 30px 20px;
+}
+.comment input{
+    margin-bottom: 20px;
+    margin-left: 20px;
+    margin-right: 20px;
+}
+.cards{
+    margin-top: 20px;
+}
+.card{
+   
+    border: 1px solid orange;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    box-shadow: 0 4px 8px 0 rgba(0,0,0,0.4);
+    transition: 0.3s;
+    width: 20%;
+    cursor: pointer;
+    float: left;
+    padding: 60px 30px;
+    margin-left: 54px;
+    background-color:orange;
+}
+.card:hover{
+  box-shadow: 0 8px 16px 0 rgba(0,0,0,0.6); ;
+  padding-bottom: 85px;
+}
+
+.card span{
+    color: black;
+    font-size: 30px;
+    animation: span 5s ;
+    -webkit-animation: span 2s ;
+    position: relative;
+}
+.card h1{
+    font-size: 25px;
+    font-family: 'Zilla Slab', serif;
+}
+
+.dropdown {
+  position: relative;
+  display: inline-block;
+}
+.downcontent{
+  display: none;
+  position: absolute;
+  background-color: #f1f1f1;
+  min-width: 160px;
+  box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+  z-index: 1;
+}
+.downcontent a{
+  color: black;
+  padding: 12px 16px;
+  text-decoration: none;
+  display: block;
+}
+.downcontent a:hover {background-color: #ddd;}
+
+.dropdown:hover .downcontent {display: block;}
+
+.dropdown:hover button {background-color: #3e8e41;}
